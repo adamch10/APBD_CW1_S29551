@@ -22,5 +22,16 @@ namespace ApbdGit
             }
             return sum / data.Length;
         }
+
+        public int CalculateMax(int[] data)
+        {
+            ProcessData(data);
+            int max = data[0];
+            foreach (int val in data)
+            {
+                if (val > max) max = val;
+            }
+            return max;
+        }
     }
 }

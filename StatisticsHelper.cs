@@ -11,5 +11,16 @@ namespace ApbdGit
                 throw new ArgumentException("Data array cannot be null or empty.");
             }
         }
+
+        public double CalculateAverage(int[] data)
+        {
+            ProcessData(data); // u¿ywamy naszej walidacji
+            double sum = 0;
+            foreach (int val in data)
+            {
+                sum += val;
+            }
+            return sum / data.Length;
+        }
     }
 }

@@ -34,4 +34,15 @@ namespace ApbdGit
             return max;
         }
     }
-}
+
+    public int CalculateMin(int[] data)
+        {
+            ProcessData(data);
+            int min = int.MaxValue;
+            foreach (int val in data)
+            {
+                if (val < min) min = val;
+            }
+            return min;
+        }
+    }

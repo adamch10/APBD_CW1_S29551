@@ -35,13 +35,13 @@ namespace ApbdGit
         }
     }
 
-    public int CalculateMin(int[] data)
+public int CalculateMin(int[] data)
         {
             ProcessData(data);
-            int min = int.MaxValue;
-            foreach (int val in data)
+            int min = data[0]; // Refaktoryzacja - lepsze podejœcie
+            for (int i = 1; i < data.Length; i++)
             {
-                if (val < min) min = val;
+                if (data[i] < min) min = data[i];
             }
             return min;
         }

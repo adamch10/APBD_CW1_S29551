@@ -6,7 +6,10 @@ namespace ApbdGit
     {
         public void ProcessData(int[] data)
         {
-            // Miejsce na przyszłą logikę
+            if (data == null || data.Length == 0)
+            {
+                throw new ArgumentException("Data array cannot be null or empty.");
+            }
         }
     }
 }

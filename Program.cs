@@ -1,6 +1,6 @@
 ﻿using ApbdGit;
 
-Console.WriteLine("Hello, World!");
+# Console.WriteLine("Hello from main branch");
 
 int[] sampleData = { 1, 2, 3, 4, 5 };
 StatisticsHelper helper = new StatisticsHelper();
